@@ -140,11 +140,35 @@ section {
 }
 
 .card-img {
+  --transition: 300ms;
+  overflow: hidden;
+  position: relative;
   grid-area: img;
   height: 250px;
   background-image: url(./media/images/dev-645-605.jpg);
-  background-size: 120%;
+  background-size: 105%;
   background-position: center;
+  transition: background-size var(--transition) ease-out;
+}
+.card-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    35deg,
+    transparent 65%,
+    rgba(255, 255, 255, .1) 70%,
+    rgba(255, 255, 255, .35) 90%
+  );
+  transform: translate(30px, -30px);
+  transition: transform var(--transition) ease-out;
+}
+
+.card:hover .card-img {
+  background-size: 100%;
+}
+.card:hover .card-img::after {
+  transform: translate(0, 0);
 }
 
 .card h2 {
