@@ -15,7 +15,6 @@ body {
 main {
   width: 100%;
   max-width: 1200px;
-  border: 3px solid red;
 }
 
 h1 {
@@ -52,7 +51,6 @@ section {
 
 .about .wrapper {
   background-color: hsl(0, 0%, 95%);
-  width: 1200px;
   height: 400px;
   filter: var(--shadow);
   padding: 0 1rem;
@@ -66,11 +64,6 @@ section {
   float:left;
   transform: scale(120%) translateX(-1.5rem);
   filter: var(--shadow);
-}
-
-.about picture {
-  width: 100%;
-  position: relative;
 }
 
 .about picture img {
