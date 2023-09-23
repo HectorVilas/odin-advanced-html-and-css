@@ -6,6 +6,18 @@
   --bg-color-1: hsl(190, 75%, 40%);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  border: 3px solid red;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -17,7 +29,6 @@ body {
 section {
   isolation: isolate;
   display: flex;
-  /* outline: 2px solid rgba(255, 0, 0, .1); */
   justify-content: center;
 }
 
