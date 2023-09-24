@@ -33,6 +33,10 @@ section {
   justify-content: center;
 }
 
+section:not(:last-child) {
+  margin-bottom: 64px;
+}
+
 /* - - - - - about section - - - - - */
 
 .about {
