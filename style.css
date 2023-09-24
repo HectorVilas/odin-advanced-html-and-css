@@ -192,3 +192,64 @@ section {
   font-size: 1.1rem;
   color: var(--txt-color-dark-3);
 }
+
+/*  - - - - - contact section - - - - - */
+
+.contact {
+  position: relative;
+  isolation: isolate;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "info img";
+  color: var(--txt-color-light-1);
+}
+.contact::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: var(--bg-color-1);
+}
+
+.contact picture {
+  grid-area: img;
+}
+
+.contact picture img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contact-info {
+  grid-area: info;
+  padding: 0;
+  padding-right: 4rem;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.contact-info p {
+  font-size: 1.25rem;
+}
+
+.txt-group {
+  margin: 2.25rem 0;
+}
+.txt-group p {
+  margin: 0;
+}
+.number-email p {
+  margin: .5rem 0;
+}
+
+.contact-info .icons {
+  float: none;
+}
