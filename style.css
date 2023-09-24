@@ -244,9 +244,27 @@ section {
 .txt-group {
   margin: 2.25rem 0;
 }
+
 .txt-group p {
   margin: 0;
 }
+
+.number-email {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0 20px;
+  align-items: center;
+}
+
+.contact-email::after {
+  content: "@gmail.com";
+}
+
+.number-email img {
+  width: 24px;
+}
+
 .number-email p {
   margin: .5rem 0;
 }
