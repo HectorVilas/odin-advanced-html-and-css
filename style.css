@@ -127,7 +127,7 @@ section:not(:last-child) {
   color: var(--txt-color-light-1);
   bottom: 0;
   left: 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
   width: 100%;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
@@ -317,4 +317,33 @@ section:not(:last-child) {
 
 .contact-info .icons {
   float: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .wrapper {
+    width: 800px;
+    height: auto;
+    align-self: center;
+    transform: translateX(.75rem);
+  }
+
+  .about figure {
+    transform: scale(125%) translateX(0);
+    transform-origin: 100% 100%;
+  }
+
+  .about figcaption {
+    top: 0;
+    right: 0;
+    transform: translateX(75%);
+  }
+
+  .contact {
+    /* grid-template-columns: 3fr 1fr; */
+  }
+  
+  .contact picture img {
+    width: 400px;
+    border: 3px solid red;
+  }
 }
