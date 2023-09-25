@@ -381,11 +381,12 @@ section:not(:last-child) {
 
   .work h1 {
     text-align: center;
+    margin-left: 0;
   }
 
   .contact {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       "info"
       "img";
@@ -397,6 +398,7 @@ section:not(:last-child) {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 0;
   }
 
   .number-email {
