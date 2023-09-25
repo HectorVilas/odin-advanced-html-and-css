@@ -184,6 +184,7 @@ section:not(:last-child) {
   height: 400px;
   background-color: hsl(0, 0%, 95%);
   filter: var(--shadow);
+  justify-self: center;
 }
 
 .card-img {
@@ -344,6 +345,5 @@ section:not(:last-child) {
   
   .contact picture img {
     width: 400px;
-    border: 3px solid red;
   }
 }
