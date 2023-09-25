@@ -236,7 +236,7 @@ section:not(:last-child) {
   padding-right: 4rem;
 }
 
-.contact-info h2 {
+.contact-info h1 {
   font-size: 2.5rem;
   margin: 0;
 }
