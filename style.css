@@ -7,6 +7,39 @@
   --bg-color-1: hsl(190, 75%, 40%);
 }
 
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(./media/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./media/fonts/Roboto-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./media/fonts/Roboto-Light.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./media/fonts/Roboto-Medium.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./media/fonts/Roboto-Black.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -20,6 +53,15 @@ main {
 
 h1 {
   font-size: 3rem;
+}
+
+h1,
+h2 {
+  font-family: PlayfairDisplay;
+}
+
+p {
+  font-family: Roboto, 'Courier New', Courier, monospace;
 }
 
 body {
